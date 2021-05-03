@@ -1,0 +1,17 @@
+pushd src/
+export DISPLAY=:0.0
+export LANG=en_US.UTF-8
+export XDG_CONFIG_DIRS=/usr/share/xdg:/etc/xdg
+export XDG_SEAT=seat0
+export XDG_SESSION_TYPE=tty
+export XDG_CURRENT_DESKTOP=KDE
+export XDG_SESSION_CLASS=user
+export XDG_VTNR=1
+export XDG_SESSION_ID=1
+export XDG_RUNTIME_DIR=/run/user/1000
+KDE_SESSION_VERSION=5
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/boni/.gtkrc:/home/boni/.config/gtkrc
+FONTCONFIG_PATH=/usr/share/defaults/fonts
+XDG_DATA_DIRS=/home/boni/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+./fsearch || :
+popd
